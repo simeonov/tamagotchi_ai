@@ -1,7 +1,10 @@
 fastapi
 uvicorn[standard]  # For running the server
 pydantic
+pydantic-settings
 structlog
 fastapi-structlog # If using it
 dvc
 dvc-gdrive
+motor
+python-dotenv
