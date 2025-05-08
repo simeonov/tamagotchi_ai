@@ -24,7 +24,7 @@ class Pet:
         self._last_tick_time = datetime.utcnow()
         self._last_age_update_time = datetime.utcnow()
 
-        # Decay rates (per hour) - can be moved to config or pet type specific
+        # Decay rates (per hour) - can be moved to config.local or pet type specific
         self._hunger_increase_rate_per_hour = 8
         self._happiness_decay_rate_per_hour = 6
         self._energy_decay_rate_per_hour = 7
