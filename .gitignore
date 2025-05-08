@@ -192,3 +192,13 @@ out/
 
 # idea folder, uncomment if you don't need it
 .idea
+
+# DVC - ignore raw data files if they are large and tracked by DVC
+# data/raw/*.jsonl  # Example, if you only want.dvc files in git
+# data/processed/*.parquet # Example for processed data
+# models/*.pkl # Example for model files
+
+# If you want to commit small data files directly to git, don't add them here.
+# For this project, synthetic data might grow, so good to plan for DVC.
+# Let's assume for now we will commit the.dvc files and.gitignore the actual data files in data/raw
+data/raw/*.jsonl
